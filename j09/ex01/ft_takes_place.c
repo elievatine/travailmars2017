@@ -6,7 +6,7 @@
 /*   By: evatine <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/16 18:08:57 by evatine           #+#    #+#             */
-/*   Updated: 2017/03/16 19:51:22 by evatine          ###   ########.fr       */
+/*   Updated: 2017/03/17 12:24:07 by evatine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@ void	ft_takes_place(int hour)
 {
 	int		y;
 	int		x;
-	int		z;
 
-	z = hour - 11;
 	y = hour + 1;
 	x = hour - 12;
 	if (hour == 0)
