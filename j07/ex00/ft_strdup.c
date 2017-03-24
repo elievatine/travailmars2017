@@ -1,39 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_params.c                                    :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evatine <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/22 11:04:05 by evatine           #+#    #+#             */
-/*   Updated: 2017/03/23 08:54:23 by evatine          ###   ########.fr       */
+/*   Created: 2017/03/23 14:33:51 by evatine           #+#    #+#             */
+/*   Updated: 2017/03/23 19:38:28 by evatine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <stdlib.h>
+#include <unistd.h>
 
-void	ft_putstr(char *str)
+char	*ft_strdup(char *src);
+
+int		ft_strle(char *str)
 {
+	int		j;
 	int		i;
+	char	c;
 
-	i = 0;
-	while (str[i])
+	j = 0;
+	c = str[0];
+	i = 1;
+	while (c != '\0')
 	{
-		ft_putchar(str[i]);
+		c = str[i];
+		i++;
+		j++;
+	}
+	return (j);
+}
+
+char	*ft_strdup(char *src)
+{
+	char	*cpy;
+	int		i;
+	int		size;
+
+	size = ft_strlen(src);
+	i = 0;
+	cpy = malloc(sizeof(*src) * (size + 1));
+	while (src[i])
+	{
+		cpy[i] = src[i];
 		i++;
 	}
+	return (cpy);
 }
 
-int		main(int argc, char **argv)
-{
-	int		i;
-
-	i = argc - 1;
-	while (i > 0)
-	{
-		ft_putstr(argv[i]);
-		ft_putchar('\n');
-		i--;
-	}
-	return (0);
-}

@@ -1,39 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_params.c                                    :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: evatine <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/22 11:04:05 by evatine           #+#    #+#             */
-/*   Updated: 2017/03/23 08:54:23 by evatine          ###   ########.fr       */
+/*   Created: 2017/03/23 19:26:30 by evatine           #+#    #+#             */
+/*   Updated: 2017/03/23 19:37:31 by evatine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <stdlib.h>
+#include <unistd.h>
 
-void	ft_putstr(char *str)
+int		*ft_range(int min, int max)
 {
+	int		*tab;
 	int		i;
 
 	i = 0;
-	while (str[i])
+	tab = (int *)malloc(sizeof(int) * (max - min));
+	while (i < (max - min))
 	{
-		ft_putchar(str[i]);
+		tab[i] = min;
+		min++;
 		i++;
 	}
-}
-
-int		main(int argc, char **argv)
-{
-	int		i;
-
-	i = argc - 1;
-	while (i > 0)
-	{
-		ft_putstr(argv[i]);
-		ft_putchar('\n');
-		i--;
-	}
-	return (0);
+	return (tab);
 }
