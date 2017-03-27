@@ -6,7 +6,7 @@
 /*   By: evatine <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/23 14:33:51 by evatine           #+#    #+#             */
-/*   Updated: 2017/03/23 19:38:28 by evatine          ###   ########.fr       */
+/*   Updated: 2017/03/24 12:40:26 by evatine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 char	*ft_strdup(char *src);
 
-int		ft_strle(char *str)
+int		ft_strlen(char *str)
 {
 	int		j;
 	int		i;
