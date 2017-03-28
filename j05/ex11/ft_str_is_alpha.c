@@ -6,7 +6,7 @@
 /*   By: evatine <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/20 19:28:26 by evatine           #+#    #+#             */
-/*   Updated: 2017/03/20 20:45:56 by evatine          ###   ########.fr       */
+/*   Updated: 2017/03/21 11:11:15 by evatine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		is_alpha(char c)
 {
-	if((c > 64 && c < 91 ) || (c > 96 && c < 123))
+	if ((c > 64 && c < 91) || (c > 96 && c < 123))
 		return (1);
 	else
 		return (0);
@@ -27,10 +27,10 @@ int		ft_str_is_alpha(char *str)
 	i = 0;
 	while (str[i])
 	{
-	 	if (is_alpha(str[i]) == 0)
+		if (is_alpha(str[i]) == 0)
 			return (0);
 		else
-		i++;
+			i++;
 	}
 	return (1);
 }

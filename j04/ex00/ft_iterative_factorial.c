@@ -6,9 +6,10 @@
 /*   By: evatine <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 16:02:14 by evatine           #+#    #+#             */
-/*   Updated: 2017/03/16 11:06:30 by evatine          ###   ########.fr       */
+/*   Updated: 2017/03/18 21:05:54 by evatine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdio.h>
 
 int		ft_iterative_factorial(int nb)
@@ -24,7 +25,7 @@ int		ft_iterative_factorial(int nb)
 	}
 	if (nb >= 2 && nb <= 12)
 	{
-		while (x < (nb -1))
+		while (x < (nb - 1))
 		{
 			factoriel = factoriel * (nb - x);
 			x++;
@@ -37,7 +38,6 @@ int		ft_iterative_factorial(int nb)
 
 int		main(void)
 {
-	printf("%d", ft_iterative_factorial(1));
-	
-	return(0);
+	printf("%d", ft_iterative_factorial(-1));
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: evatine <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/16 14:51:38 by evatine           #+#    #+#             */
-/*   Updated: 2017/03/17 15:14:03 by evatine          ###   ########.fr       */
+/*   Updated: 2017/03/19 10:26:13 by evatine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,11 @@ int		ft_sqrt(int nb)
 			return (i);
 		i++;
 	}
-	return (-1);
+	return (0);
 }
-		
+
 int		main(void)
 {
-	printf("%d", ft_sqrt(9));
-
-	return(0);
+	printf("%d", ft_sqrt(53703821));
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: evatine <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/16 16:18:42 by evatine           #+#    #+#             */
-/*   Updated: 2017/03/17 15:20:27 by evatine          ###   ########.fr       */
+/*   Updated: 2017/03/19 10:28:39 by evatine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_is_prime(int nb)
 
 	i = 2;
 	is_prime = 1;
-	if (nb == 1 || nb == 0)
+	if (nb <= 1)
 		is_prime = 0;
 	while (i < (nb - 1) && is_prime == 1)
 	{
@@ -34,7 +34,6 @@ int		ft_is_prime(int nb)
 
 int		main(void)
 {
-	printf("%d", ft_is_prime(0));
-
-	return(0);
+	printf("%d", ft_is_prime(-5));
+	return (0);
 }

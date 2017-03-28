@@ -6,7 +6,7 @@
 /*   By: evatine <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/20 12:50:14 by evatine           #+#    #+#             */
-/*   Updated: 2017/03/20 16:45:12 by evatine          ###   ########.fr       */
+/*   Updated: 2017/03/21 11:01:17 by evatine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ char	*ft_strupcase(char *str)
 	while (str[i])
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
-				str[i] -=32;
-				i++;
+			str[i] -= 32;
+		i++;
 	}
 	return (str);
 }

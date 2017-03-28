@@ -6,7 +6,7 @@
 /*   By: evatine <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/20 15:04:09 by evatine           #+#    #+#             */
-/*   Updated: 2017/03/20 15:11:39 by evatine          ###   ########.fr       */
+/*   Updated: 2017/03/21 11:01:59 by evatine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ char	*ft_strlowcase(char *str)
 	while (str[i])
 	{
 		if (str[i] >= 'A' && str[i] <= 'Z')
-				str[i] +=32;
-				i++;
+			str[i] += 32;
+		i++;
 	}
 	return (str);
 }

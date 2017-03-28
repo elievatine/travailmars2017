@@ -6,11 +6,11 @@
 /*   By: evatine <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/20 12:02:58 by evatine           #+#    #+#             */
-/*   Updated: 2017/03/20 12:34:08 by evatine          ###   ########.fr       */
+/*   Updated: 2017/03/23 10:21:35 by evatine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strncmp(char *s1, char *s2, unsigned int n);
+int		ft_strncmp(char *s1, char *s2, unsigned int n)
 {
 	int			i;
 

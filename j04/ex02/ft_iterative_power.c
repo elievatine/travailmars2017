@@ -6,7 +6,7 @@
 /*   By: evatine <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/16 10:18:49 by evatine           #+#    #+#             */
-/*   Updated: 2017/03/16 11:25:24 by evatine          ###   ########.fr       */
+/*   Updated: 2017/03/19 10:56:25 by evatine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,15 @@
 
 int		ft_iterative_power(int nb, int power)
 {
-	int		result;
-	int		i;
-
-	i = 0;
-	result = nb;
-	if (power >= 2 && power <=12)
-	{
-		while (i < (power - 1))
-		{
-			result = result * nb;
-			i++;
-		}
-		return (result);
-	}
-		else 
-			return (0);
+	if (power < 0)
+		return (0);
+	if (power == 0)
+		return (1);
+	return (nb * (ft_iterative_power(nb, power - 1)));
 }
 
 int		main(void)
 {
-	printf("%d", ft_iterative_power(14, 2));
-
-		return(0);
+	printf("%d", ft_iterative_power(5, -2));
+	return (0);
 }

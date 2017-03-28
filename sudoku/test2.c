@@ -40,6 +40,28 @@ int main(int argc, char** argv)
 	init_bits();
 	init_known(argc-1, argv+1);
 
+int		grille [9][9]
+		{
+				{9,0,0,1,0,0,0,0,5},
+				{0,0,5,0,9,0,2,0,1},
+				{8,0,0,0,4,0,0,0,0},
+				{0,0,0,0,8,0,0,0,0},
+				{0,0,0,7,0,0,0,0,0},
+				{2,0,0,3,0,0,0,0,6},
+				{0,0,0,2,0,0,9,0,0},
+				{0,0,1,9,0,4,5,7,0},
+		};
+
+		printf("grille avant\n");
+		ft_print(grille);
+
+		valid(grille,0);
+
+		printf("grille apres\n");
+		ft_print(grille);
+
+		return (0);
+	}
 	solve_sudoku();
 	print_matrix();
 
@@ -135,6 +157,7 @@ void solve_sudoku(void)
 		}
 	}
 }
+
 
 /* Initializes the array with powers of 2. */
 void init_bits(void)

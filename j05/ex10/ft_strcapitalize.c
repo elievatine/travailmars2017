@@ -6,7 +6,7 @@
 /*   By: evatine <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/20 17:02:27 by evatine           #+#    #+#             */
-/*   Updated: 2017/03/20 17:02:32 by evatine          ###   ########.fr       */
+/*   Updated: 2017/03/21 11:17:53 by evatine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int		is_caps(char c)
 	else
 		return (0);
 }
+
 int		is_alphanum(char c)
 {
 	if ((c > 64 && c < 91) || (c > 96 && c < 123) || (c > 47 && c < 58))
@@ -35,7 +36,7 @@ int		is_num(char c)
 		return (0);
 }
 
-char		*ft_strcapitalize(char *str)
+char	*ft_strcapitalize(char *str)
 {
 	int		i;
 
@@ -47,7 +48,7 @@ char		*ft_strcapitalize(char *str)
 		if (is_caps(str[i]) == 0 && is_num(str[i]) == 0)
 			str[i] -= 32;
 		i++;
-		while (is_alphanum(str[i]) == 1 )
+		while (is_alphanum(str[i]) == 1)
 		{
 			if (is_caps(str[i]) == 1 && is_num(str[i]) == 0)
 				str[i] += 32;
